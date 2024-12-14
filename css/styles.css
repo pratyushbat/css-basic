@@ -1,6 +1,9 @@
+html{
+    font-size: 62.5%;
+}
 body{
-    margin: 10px !important
-    ;
+    margin: 10px !important;
+   
 }
 
 
@@ -66,12 +69,12 @@ p::before , p::after{
     content: '...';
     /* display: block; */
 }
-p{
+/* p{
     color: dodgerblue;
     border: 1px solid black;
     padding: 20px;
     margin: 20px;
-}
+} */
 strong{
     color: initial;
     border: inherit;
@@ -119,4 +122,29 @@ h1{
 
 
 
-/* overflo */
+/* overfloww */
+.ofbox{
+    border: 3px solid gold;
+    width: 150px;
+    height:  150px;
+    overflow: hidden auto;
+    padding: 10px 10px 10px 10px;
+    margin: 50px;
+}
+
+
+/* size */
+
+.szbox{
+    /* padding: 10px 10px 10px 10px; */
+    /* margin: 50px; */
+
+
+    background-color:  gold;
+    /* 10 x font size of current elemnt ->body elemment or htl elemaent= 10x 16 */
+    /* 1rem=16px */
+    width: 25rem;
+    /* font-size: 20px; */
+    height:  100vh;
+    border-top: 5px solid orange;
+}

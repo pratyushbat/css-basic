@@ -1,0 +1,72 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    margin: 10px !important;
+   
+}
+
+
+.boxes{
+    border: 3px solid lightgrey;
+    position: relative;
+}
+.box{
+    width: 15rem;
+    height:  15rem;
+     /* padding: 10px 10px 10px 10px;
+     margin: 50px;
+    background: gold;
+    border: 10px solid royalblue;
+box-shadow: 10px 10px 30px grey; */
+}
+
+.box-one ,.box-four{ background-color: orange; }
+
+.box-two{ background-color: red; 
+    position: absolute;
+    /* absolute removed fromm dom and container shouuld be relativ */
+    /* left: -5rem; */
+    right: 0;
+    /* top: 3rem; */
+    bottom: 0;
+    z-index: -1;
+}
+
+
+.box-five{ background-color: tomato; 
+    position: fixed;
+  
+    top: 0;
+    /* top: 3rem; */
+    left: 2rem;
+    right: 2rem;
+    width: auto;
+    z-index: 9999999;
+}
+.box-three ,.box-six{ background-color: blue;}
+
+.avatar{
+    width: 15rem;
+    height:  15rem;
+    background-color: aqua;
+    float: left;
+    margin-right: 1rem;
+  
+}
+
+.clear{
+    clear: both;
+}
+
+
+.tweet{
+    border: 3px solid lightgrey;
+    /* overflow: hidden; */
+    /* cn be userd n plaace of clearfix */
+   
+}
+.clearfix::after{content: '';
+    display: block;
+    clear: both;}

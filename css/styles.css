@@ -1,0 +1,122 @@
+body{
+    margin: 10px !important
+    ;
+}
+
+
+#products p{
+color: orange;
+}
+
+/* a[target="_blank"]{
+    color: rebeccapurple;
+} */
+
+a[href ^="https"][href $=".com"]{
+    color: rebeccapurple;
+}
+
+.product{
+    background-color: aliceblue; width: 300px;
+}
+/* direct child  */
+#product > p{
+    color: yellow; 
+}
+
+/*aall nested child  */
+/* #product  p{
+    color: yellow; 
+} */
+
+/* just after  product oonlyu  */
+#product + p{
+    color: orange !important ; 
+}
+
+
+/* aall sibliinieg child  */
+#product  ~ p{
+    color: green ; 
+}
+
+/* pseudo clss css */
+article p:first-of-type {
+    font-size: 140%;
+
+    font-style: italic;
+}
+
+a:hover
+,a:focus
+{
+    color: deeppink !important;
+}
+
+/* pseudo eleent -part of eleement */
+
+p::first-line {
+    font-weight: bold;
+}
+::selection{
+    background-color: pink;
+}
+p::before , p::after{
+
+    content: '...';
+    /* display: block; */
+}
+p{
+    color: dodgerblue;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 20px;
+}
+strong{
+    color: initial;
+    border: inherit;
+}
+
+/* universal selector -all element */
+* ,*::before, *::after{
+    box-sizing: border-box;
+}
+
+.box{
+    width: 150px;
+    height:  150px;
+     padding: 10px 10px 10px 10px;
+     margin: 50px;
+    background: gold;
+    border: 10px solid royalblue;
+    /* defaulkt is content box */
+    box-sizing: border-box;
+/* border-radius: 50%; */
+box-shadow: 10px 10px 30px grey;
+}
+
+
+.spanbox{
+    width: 150px;
+    height:  150px;
+     padding: 10px 10px 10px 10px;
+     margin: 50px;
+    background: gold;
+    border: 10px solid royalblue;
+    box-sizing: border-box;
+/* default is inluine */
+    display: inline-block;
+/* border-radius: 50%; */
+box-shadow: 10px 10px 30px grey;
+}
+
+.box::before{content: 'ooo';}
+h1{
+
+    color: white;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* overflo */
